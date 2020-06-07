@@ -1,4 +1,4 @@
-﻿namespace Atividade2
+﻿namespace Atividade3
 {
     partial class Form1
     {
@@ -28,92 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grpbxSexo = new System.Windows.Forms.GroupBox();
-            this.rdbtnFem = new System.Windows.Forms.RadioButton();
-            this.rdbtnMasc = new System.Windows.Forms.RadioButton();
-            this.lblPeso = new System.Windows.Forms.Label();
-            this.lblAltura = new System.Windows.Forms.Label();
-            this.txtPeso = new System.Windows.Forms.TextBox();
-            this.txtAltura = new System.Windows.Forms.TextBox();
+            this.lblA = new System.Windows.Forms.Label();
+            this.lblB = new System.Windows.Forms.Label();
+            this.lblC = new System.Windows.Forms.Label();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtC = new System.Windows.Forms.TextBox();
             this.btnResultado = new System.Windows.Forms.Button();
-            this.grpbxSexo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // grpbxSexo
+            // lblA
             // 
-            this.grpbxSexo.Controls.Add(this.txtAltura);
-            this.grpbxSexo.Controls.Add(this.txtPeso);
-            this.grpbxSexo.Controls.Add(this.lblAltura);
-            this.grpbxSexo.Controls.Add(this.lblPeso);
-            this.grpbxSexo.Controls.Add(this.rdbtnMasc);
-            this.grpbxSexo.Controls.Add(this.rdbtnFem);
-            this.grpbxSexo.Location = new System.Drawing.Point(35, 23);
-            this.grpbxSexo.Name = "grpbxSexo";
-            this.grpbxSexo.Size = new System.Drawing.Size(200, 159);
-            this.grpbxSexo.TabIndex = 0;
-            this.grpbxSexo.TabStop = false;
-            this.grpbxSexo.Text = "groupBox1";
+            this.lblA.AutoSize = true;
+            this.lblA.Location = new System.Drawing.Point(27, 33);
+            this.lblA.Name = "lblA";
+            this.lblA.Size = new System.Drawing.Size(110, 13);
+            this.lblA.TabIndex = 0;
+            this.lblA.Text = "Digite o Primeiro Valor";
             // 
-            // rdbtnFem
+            // lblB
             // 
-            this.rdbtnFem.AutoSize = true;
-            this.rdbtnFem.Location = new System.Drawing.Point(7, 20);
-            this.rdbtnFem.Name = "rdbtnFem";
-            this.rdbtnFem.Size = new System.Drawing.Size(67, 17);
-            this.rdbtnFem.TabIndex = 0;
-            this.rdbtnFem.TabStop = true;
-            this.rdbtnFem.Text = "Feminino";
-            this.rdbtnFem.UseVisualStyleBackColor = true;
+            this.lblB.AutoSize = true;
+            this.lblB.Location = new System.Drawing.Point(27, 68);
+            this.lblB.Name = "lblB";
+            this.lblB.Size = new System.Drawing.Size(116, 13);
+            this.lblB.TabIndex = 1;
+            this.lblB.Text = "Digite o Segundo Valor";
             // 
-            // rdbtnMasc
+            // lblC
             // 
-            this.rdbtnMasc.AutoSize = true;
-            this.rdbtnMasc.Location = new System.Drawing.Point(7, 44);
-            this.rdbtnMasc.Name = "rdbtnMasc";
-            this.rdbtnMasc.Size = new System.Drawing.Size(73, 17);
-            this.rdbtnMasc.TabIndex = 1;
-            this.rdbtnMasc.TabStop = true;
-            this.rdbtnMasc.Text = "Masculino";
-            this.rdbtnMasc.UseVisualStyleBackColor = true;
+            this.lblC.AutoSize = true;
+            this.lblC.Location = new System.Drawing.Point(30, 107);
+            this.lblC.Name = "lblC";
+            this.lblC.Size = new System.Drawing.Size(112, 13);
+            this.lblC.TabIndex = 2;
+            this.lblC.Text = "Digite o Terceiro Valor";
             // 
-            // lblPeso
+            // txtA
             // 
-            this.lblPeso.AutoSize = true;
-            this.lblPeso.Location = new System.Drawing.Point(7, 68);
-            this.lblPeso.Name = "lblPeso";
-            this.lblPeso.Size = new System.Drawing.Size(31, 13);
-            this.lblPeso.TabIndex = 2;
-            this.lblPeso.Text = "Peso";
+            this.txtA.Location = new System.Drawing.Point(195, 33);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(100, 20);
+            this.txtA.TabIndex = 3;
             // 
-            // lblAltura
+            // txtB
             // 
-            this.lblAltura.AutoSize = true;
-            this.lblAltura.Location = new System.Drawing.Point(4, 102);
-            this.lblAltura.Name = "lblAltura";
-            this.lblAltura.Size = new System.Drawing.Size(34, 13);
-            this.lblAltura.TabIndex = 3;
-            this.lblAltura.Text = "Altura";
+            this.txtB.Location = new System.Drawing.Point(195, 60);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(100, 20);
+            this.txtB.TabIndex = 4;
             // 
-            // txtPeso
+            // txtC
             // 
-            this.txtPeso.Location = new System.Drawing.Point(78, 68);
-            this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(100, 20);
-            this.txtPeso.TabIndex = 4;
-            // 
-            // txtAltura
-            // 
-            this.txtAltura.Location = new System.Drawing.Point(78, 102);
-            this.txtAltura.Name = "txtAltura";
-            this.txtAltura.Size = new System.Drawing.Size(100, 20);
-            this.txtAltura.TabIndex = 5;
+            this.txtC.Location = new System.Drawing.Point(195, 107);
+            this.txtC.Name = "txtC";
+            this.txtC.Size = new System.Drawing.Size(100, 20);
+            this.txtC.TabIndex = 5;
             // 
             // btnResultado
             // 
-            this.btnResultado.Location = new System.Drawing.Point(113, 221);
+            this.btnResultado.Location = new System.Drawing.Point(401, 80);
             this.btnResultado.Name = "btnResultado";
             this.btnResultado.Size = new System.Drawing.Size(75, 23);
-            this.btnResultado.TabIndex = 1;
+            this.btnResultado.TabIndex = 6;
             this.btnResultado.Text = "Resultado";
             this.btnResultado.UseVisualStyleBackColor = true;
             this.btnResultado.Click += new System.EventHandler(this.btnResultado_Click);
@@ -124,24 +101,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnResultado);
-            this.Controls.Add(this.grpbxSexo);
+            this.Controls.Add(this.txtC);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
+            this.Controls.Add(this.lblC);
+            this.Controls.Add(this.lblB);
+            this.Controls.Add(this.lblA);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.grpbxSexo.ResumeLayout(false);
-            this.grpbxSexo.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grpbxSexo;
-        private System.Windows.Forms.RadioButton rdbtnMasc;
-        private System.Windows.Forms.RadioButton rdbtnFem;
-        private System.Windows.Forms.TextBox txtAltura;
-        private System.Windows.Forms.TextBox txtPeso;
-        private System.Windows.Forms.Label lblAltura;
-        private System.Windows.Forms.Label lblPeso;
+        private System.Windows.Forms.Label lblA;
+        private System.Windows.Forms.Label lblB;
+        private System.Windows.Forms.Label lblC;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtC;
         private System.Windows.Forms.Button btnResultado;
     }
 }

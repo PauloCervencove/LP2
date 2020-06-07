@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Atividade2
+namespace Atividade3
 {
     public partial class Form1 : Form
     {
@@ -19,47 +19,33 @@ namespace Atividade2
 
         private void btnResultado_Click(object sender, EventArgs e)
         {
-            double verify1, verify2, pesoIdeal;
-            if (double.TryParse(txtAltura.Text, out verify1) && double.TryParse(txtPeso.Text, out verify2))
+            double a, b, c, x;
+            if (double.TryParse(txtA.Text, out a) && double.TryParse(txtB.Text, out b) && double.TryParse(txtC.Text, out c) & a > 0 & b > 0 & c > 0)
             {
-                if (rdbtnFem.Checked == true || rdbtnMasc.Checked == true)
+                if (b > a && b > c)
                 {
-
-                    if (rdbtnFem.Checked == true)
-                        pesoIdeal = ((62.1 * verify1) - 44.7);
-
-
-
-                    if (verify2 == pesoIdeal)
-                    {
-                        MessageBox.Show("Você está com o peso ideal!");
-                    }
-                    else if (verify2 < pesoIdeal)
-                        MessageBox.Show("Coma bastante massas e doces!");
-                    else  (verify2 > pesoIdeal)
-                        MessageBox.Show("Regime obrigatório já!");
-                    
+                    x = a;
+                    a = b;
+                    b = x;
                 }
-                else if (rdbtnMasc.Checked == true)
+                if (c > b && c > a)
                 {
-                    
-                        
-                    
-                        pesoIdeal = ((72.7 * verify1) - 58);
-
-                    if (verify2 == pesoIdeal)
-                        MessageBox.Show("Você está com o peso ideal!");
-                    else if (verify2 < pesoIdeal)
-                        MessageBox.Show("Coma bastante massas e doces!");
-                    else if (verify2 > pesoIdeal)
-                        MessageBox.Show("Regime obrigatório já!");
+                    x = a;
+                    a = c;
+                    c = x;
                 }
-                else
-                    MessageBox.Show("Sexo não selecionado");
+
+                if (a >= b + c)
+                    MessageBox.Show("Não forma triângulo");
+                else if (a == b && b == c)
+                    MessageBox.Show("Triângulo Equilátero");
+                else if (a != b && b != c)
+                    MessageBox.Show("Triângulo Escaleno");
+                else if (a == b || b == c || c == a)
+                    MessageBox.Show("Triângulo Isósceles");
             }
             else
-                MessageBox.Show("Dados Inválidos!");
-
+                MessageBox.Show("Dados Invalidos");
         }
     }
 }
